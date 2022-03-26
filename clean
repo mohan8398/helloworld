@@ -1,0 +1,5 @@
+const http = require('http');
+const clean=require('./clean');
+console(clean.someText);
+const server=http.createServer(clean)
+server.listen(3000);
