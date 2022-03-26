@@ -1,0 +1,46 @@
+const http = require('http');
+
+const server=http.createServer((req,res)=>{
+    console.log(req.url,req.method,req.headers);
+    //process.exit();
+    res.setHeader('content-Type',"home/html")
+    res.write('<html>');
+    res.write('<head><title> first Page</title></head>');
+    res.write('<body><title>Welcome home</title></body>');
+    res.write('</html>');
+    res.end();
+
+})
+server.listen(3000);
+
+
+const http = require('http');
+
+const server=http.createServer((req,res)=>{
+    console.log(req.url,req.method,req.headers);
+    //process.exit();
+    res.setHeader('content-Type',"about/html")
+    res.write('<html>');
+    res.write('<head><title> first Page</title></head>');
+    res.write('<body><title>Welcome to About Us page</title></body>');
+    res.write('</html>');
+    res.end();
+
+})
+server.listen(3000);
+
+
+const http = require('http');
+
+const server=http.createServer((req,res)=>{
+    console.log(req.url,req.method,req.headers);
+    //process.exit();
+    res.setHeader('content-Type',"node/html")
+    res.write('<html>');
+    res.write('<head><title> first Page</title></head>');
+    res.write('<body><title>Hello from my Node.js project</title></body>');
+    res.write('</html>');
+    res.end();
+
+})
+server.listen(3000);
